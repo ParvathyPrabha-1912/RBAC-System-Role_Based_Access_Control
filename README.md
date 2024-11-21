@@ -24,18 +24,44 @@ Project Structure
   
 Installation
 
-1.Clone the repositary
-  git clone https://github.com/ParvathyPrabha-1912/RBAC-System-Role_Based_Access_Control.git
-2.Navigate to the project directory
-  cd RBAC-System-Role_Based_Access_Control--System
-3.Install dependencies
-  npm install
-4.Run the application
-  npm start
+1.Clone the repositary-- git clone https://github.com/ParvathyPrabha-1912/RBAC-System-Role_Based_Access_Control.git
+2.Navigate to the project directory--cd RBAC-System-Role_Based_Access_Control--System
+3.Install dependencies--npm install
+4.Run the application--npm start
 
-Testing
-  npm test
 
+
+
+API Endpoints
+
+
+Roles
+POST /roles - Create a new role.
+GET /roles - Fetch all roles.
+PATCH /roles/:id - Update a role.
+DELETE /roles/:id - Delete a role.
+
+
+Users
+POST /users - Create a new user.
+GET /users - Fetch all users.
+PATCH /users/:id - Update user details.
+DELETE /users/:id - Delete a user.
+
+
+Authentication
+POST /auth/login - Log in a user and generate a JWT.
+POST /auth/register - Register a new user.
+
+Usage
+
+1.Assign roles to users during registration or using the API.
+2.Secure your endpoints by adding RBAC middleware to verify permissions:
+
+const authorize = require('./middleware/authorize');  
+app.use('/secure-endpoint', authorize('role_name'));  
+
+Testing--npm test
 
 
   
