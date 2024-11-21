@@ -21,6 +21,21 @@ Project Structure
   ├── package.json          # Node.js dependencies and scripts  
   ├── README.md             # Project documentation  
   └── .env                  # Environment variables  
-Installation
   
+Installation
+
+1.Clone the repositary
+  git clone https://github.com/ParvathyPrabha-1912/RBAC-System-Role_Based_Access_Control.git
+2.Navigate to the project directory
+  cd RBAC-System-Role_Based_Access_Control--System
+3.Install dependencies
+  npm install
+4.Run the application
+  npm start
+
+Testing
+  npm test
+
+
+
   
